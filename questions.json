@@ -1,0 +1,548 @@
+[
+ {
+  "id": "ACC1",
+  "topic": "Accounting",
+  "difficulty": "Easy",
+  "question": "Walk me through the three financial statements.",
+  "key_points": [
+   "Income statement: revenue, expenses and net income over a period",
+   "Balance sheet: assets, liabilities and equity at a point in time, with assets = liabilities + equity",
+   "Cash flow statement: starts with net income, adjusts for non-cash items and working capital, then investing and financing, giving the net change in cash",
+   "Links: net income flows into retained earnings and the top of the cash flow statement; ending cash flows to the balance sheet"
+  ],
+  "model_answer": "The income statement shows profitability over a period, ending in net income. The balance sheet is a snapshot of assets, liabilities and equity, and must balance. The cash flow statement starts from net income, adds back non-cash charges and working-capital changes, then adds investing and financing flows to get the change in cash. Net income links to retained earnings and the CFS, and ending cash links back to the balance sheet."
+ },
+ {
+  "id": "ACC2",
+  "topic": "Accounting",
+  "difficulty": "Easy",
+  "question": "If you could only use one financial statement to judge a company's health, which would you pick and why?",
+  "key_points": [
+   "Picks one statement and gives a clear reason",
+   "Cash flow statement is the common answer: shows real cash generation and liquidity",
+   "Notes it is harder to manipulate than accrual earnings",
+   "Acknowledges what that statement misses (e.g., no full picture of assets or debt)"
+  ],
+  "model_answer": "Most bankers pick the cash flow statement: it shows how much cash the business actually generates, which is harder to dress up than accrual profits and tells you whether the company can fund itself. A balance-sheet answer can also work if well argued. Either way, acknowledge what you lose by ignoring the others."
+ },
+ {
+  "id": "ACC3",
+  "topic": "Accounting",
+  "difficulty": "Medium",
+  "question": "Depreciation increases by $10. Walk me through the impact on all three statements, assuming a 40% tax rate.",
+  "key_points": [
+   "Income statement: operating income down $10, net income down $6 after tax",
+   "Cash flow statement: net income down $6, add back $10 depreciation, cash up $4",
+   "Balance sheet assets: cash up $4, PP&E down $10, total assets down $6",
+   "Balance sheet equity: retained earnings down $6, so it balances"
+  ],
+  "model_answer": "Pre-tax income falls $10, and at 40% tax net income falls $6. On the CFS, net income is down $6 but you add back the $10 non-cash depreciation, so cash rises $4 (the tax saving). On the balance sheet, cash +4 and PP&E -10 means assets -6; retained earnings -6 means equity -6. It balances."
+ },
+ {
+  "id": "ACC4",
+  "topic": "Accounting",
+  "difficulty": "Medium",
+  "question": "A company buys $100 of inventory with cash. What happens on the three statements?",
+  "key_points": [
+   "No income statement impact until the inventory is sold",
+   "Cash flow statement: increase in inventory reduces cash from operations by $100",
+   "Balance sheet: cash down $100, inventory up $100, total assets unchanged",
+   "Liabilities and equity unchanged, so the balance sheet still balances"
+  ],
+  "model_answer": "Nothing hits the income statement yet because the inventory hasn't been sold. On the CFS, the increase in inventory is a working-capital use of cash, so cash from operations falls $100. On the balance sheet, cash falls $100 and inventory rises $100: assets are unchanged and it balances."
+ },
+ {
+  "id": "ACC5",
+  "topic": "Accounting",
+  "difficulty": "Hard",
+  "question": "A company raises $100 of debt at 10% interest and uses it to buy PP&E depreciated straight-line over 10 years. Tax rate 40%. Walk me through year one.",
+  "key_points": [
+   "Income statement: $10 interest plus $10 depreciation, pre-tax income down $20, net income down $12",
+   "Cash flow from operations: net income -12 plus 10 depreciation = -2",
+   "Investing -100 for capex and financing +100 for debt, net change in cash -2",
+   "Balance sheet: cash -2, PP&E +90, assets +88; debt +100, retained earnings -12, so liabilities + equity +88"
+  ],
+  "model_answer": "Interest is $10 and depreciation is $10, so pre-tax income falls $20 and net income falls $12. CFO is -12 + 10 = -2, CFI is -100, CFF is +100, so cash falls $2. Assets: cash -2 and net PP&E +90 = +88. Liabilities and equity: debt +100 and retained earnings -12 = +88. Balanced."
+ },
+ {
+  "id": "ACC6",
+  "topic": "Accounting",
+  "difficulty": "Hard",
+  "question": "What is a deferred tax liability, and how can one arise?",
+  "key_points": [
+   "Book tax expense is higher than cash taxes actually paid today",
+   "Caused by timing differences between book and tax accounting, e.g. accelerated depreciation for tax",
+   "It is a liability because the company will pay more cash tax in the future as the difference reverses",
+   "Can also arise in M&A when assets are written up for book but not for tax"
+  ],
+  "model_answer": "A DTL appears when the tax expense on the income statement exceeds the cash tax paid, usually from timing differences such as accelerated tax depreciation. The company has effectively deferred taxes it will pay later as the difference reverses. In acquisitions, writing up assets for book but not tax purposes also creates a DTL."
+ },
+ {
+  "id": "EV1",
+  "topic": "Enterprise Value",
+  "difficulty": "Easy",
+  "question": "What's the difference between enterprise value and equity value?",
+  "key_points": [
+   "Equity value is the value to common shareholders only (market cap for public companies)",
+   "Enterprise value is the value of the core operations to all capital providers",
+   "EV = equity value + debt + preferred stock + minority interest - cash",
+   "EV is independent of capital structure; equity value is not"
+  ],
+  "model_answer": "Equity value is what the common shareholders own, i.e. market capitalisation. Enterprise value is the value of the core business to all investors: equity value plus debt, preferred stock and minority interest, minus cash. EV doesn't change with how the business is financed, while equity value does."
+ },
+ {
+  "id": "EV2",
+  "topic": "Enterprise Value",
+  "difficulty": "Easy",
+  "question": "Why do we subtract cash when calculating enterprise value?",
+  "key_points": [
+   "Cash is a non-operating asset, not part of the core business",
+   "An acquirer effectively gets the cash back, reducing the net cost of buying the company",
+   "EV is meant to value only the operating business",
+   "Cash is already reflected in the equity value"
+  ],
+  "model_answer": "EV values the operating business. Cash isn't an operating asset, and a buyer effectively gets it back (it could pay down debt or return it), so it lowers the net cost of acquiring the business. Since equity value already includes the cash, we subtract it to isolate the operations."
+ },
+ {
+  "id": "EV3",
+  "topic": "Enterprise Value",
+  "difficulty": "Medium",
+  "question": "Can a company have a negative enterprise value? What would that tell you?",
+  "key_points": [
+   "Yes, when cash exceeds equity value plus debt and other claims",
+   "Usually seen in distressed or heavily out-of-favour companies",
+   "Implies the market assigns a negative value to the operations, e.g. expecting cash burn",
+   "Rare and often a sign of risk or mispricing"
+  ],
+  "model_answer": "Yes. If a company holds more cash than its market cap plus debt, EV goes negative. It usually means the market expects the business to burn through that cash, so it values operations below zero. It's rare and typically seen in distressed or deeply unloved stocks."
+ },
+ {
+  "id": "EV4",
+  "topic": "Enterprise Value",
+  "difficulty": "Medium",
+  "question": "Which valuation multiples use enterprise value and which use equity value? Give examples.",
+  "key_points": [
+   "Numerator and denominator must refer to the same capital providers",
+   "EV multiples use metrics before interest: EV/EBITDA, EV/Revenue, EV/EBIT",
+   "Equity value multiples use metrics after interest: P/E, price to book",
+   "A mismatched multiple like EV/Net income is wrong"
+  ],
+  "model_answer": "Match the investors on both sides. EBITDA, EBIT and revenue are available to all capital providers, so they pair with EV (EV/EBITDA, EV/Revenue). Net income is after interest, so it belongs only to equity holders and pairs with equity value (P/E). Mixing them, like EV/Net income, is inconsistent."
+ },
+ {
+  "id": "EV5",
+  "topic": "Enterprise Value",
+  "difficulty": "Hard",
+  "question": "A company has 100 shares at $10 and options on 10 shares with a $5 strike. Using the treasury stock method, what is its diluted equity value?",
+  "key_points": [
+   "Options are in the money because the $5 strike is below the $10 price",
+   "Exercise proceeds of 10 x $5 = $50 buy back $50 / $10 = 5 shares",
+   "Net new shares = 10 - 5 = 5, so diluted shares = 105",
+   "Diluted equity value = 105 x $10 = $1,050"
+  ],
+  "model_answer": "The options are in the money. Exercising them brings in $50, which under the treasury stock method buys back 5 shares at $10. Net dilution is 5 shares, so there are 105 diluted shares and diluted equity value is $1,050."
+ },
+ {
+  "id": "EV6",
+  "topic": "Enterprise Value",
+  "difficulty": "Hard",
+  "question": "A company raises $100 of debt and uses it to pay a $100 dividend. What happens to equity value and enterprise value?",
+  "key_points": [
+   "Equity value falls by about $100 as cash leaves to shareholders",
+   "Debt rises by $100",
+   "Enterprise value is unchanged in theory: -100 equity +100 debt",
+   "Caveat: ignores tax shields and financial distress costs"
+  ],
+  "model_answer": "Shareholders receive $100, so equity value drops by roughly $100, while debt rises $100. EV = equity + debt - cash stays the same: the operations haven't changed, only the financing. In practice tax shields or distress risk can nudge it."
+ },
+ {
+  "id": "VAL1",
+  "topic": "Valuation",
+  "difficulty": "Easy",
+  "question": "What are the main ways to value a company?",
+  "key_points": [
+   "Comparable public companies (trading comps)",
+   "Precedent transactions",
+   "Discounted cash flow analysis (intrinsic value)",
+   "Distinguishes relative methods from intrinsic, and can mention LBO analysis"
+  ],
+  "model_answer": "The core three are trading comps, precedent transactions and a DCF. Comps and precedents are relative valuations based on what similar companies trade or sell for; the DCF is intrinsic, based on the company's own cash flows. An LBO analysis is often added to show what a financial buyer could pay."
+ },
+ {
+  "id": "VAL2",
+  "topic": "Valuation",
+  "difficulty": "Easy",
+  "question": "Why might precedent transactions give a higher valuation than trading comps?",
+  "key_points": [
+   "Acquirers pay a control premium",
+   "Prices include expected synergies",
+   "Trading comps reflect minority stakes traded in the market",
+   "Deals may reflect different market conditions at the time"
+  ],
+  "model_answer": "Precedents reflect prices paid to buy control of whole companies, so they include a control premium and often synergies the buyer expects. Trading comps reflect small minority stakes trading day to day, which don't carry those premiums."
+ },
+ {
+  "id": "VAL3",
+  "topic": "Valuation",
+  "difficulty": "Medium",
+  "question": "How do you choose comparable companies?",
+  "key_points": [
+   "Same industry and similar business model",
+   "Similar size (revenue, market cap)",
+   "Similar geography",
+   "Similar growth and margin profile"
+  ],
+  "model_answer": "Start with companies in the same industry with similar business models, then narrow by size, geography and financial profile such as growth rates and margins. The goal is companies investors would value in a similar way."
+ },
+ {
+  "id": "VAL4",
+  "topic": "Valuation",
+  "difficulty": "Medium",
+  "question": "When would a DCF not be appropriate?",
+  "key_points": [
+   "Unpredictable or negative cash flows, e.g. early-stage startups",
+   "Banks and financial institutions, where debt is part of operations",
+   "Use alternatives such as dividend discount model or price to book for banks",
+   "Highly cyclical or distressed companies where projections are unreliable"
+  ],
+  "model_answer": "A DCF struggles when cash flows can't be forecast sensibly, like early-stage or loss-making startups. For banks, interest and debt are operating items, so you'd use a dividend discount model or P/BV. Very cyclical or distressed companies are also hard to project."
+ },
+ {
+  "id": "VAL5",
+  "topic": "Valuation",
+  "difficulty": "Hard",
+  "question": "Two companies are identical except one grows faster. Which trades at a higher EV/EBITDA multiple? What if the faster grower is also riskier?",
+  "key_points": [
+   "Higher growth means more future cash flow per dollar of today's EBITDA, so a higher multiple",
+   "Higher risk raises the discount rate, which lowers the multiple",
+   "Net effect depends on which effect dominates",
+   "Multiples reflect growth, risk and returns on capital / reinvestment needs"
+  ],
+  "model_answer": "All else equal, the faster grower deserves a higher multiple because today's EBITDA understates its future cash flows. But if it's riskier, investors use a higher discount rate, which pushes the multiple down. The answer depends on which dominates; multiples ultimately reflect growth, risk and how much reinvestment that growth needs."
+ },
+ {
+  "id": "VAL6",
+  "topic": "Valuation",
+  "difficulty": "Hard",
+  "question": "How would you value a company with negative EBITDA?",
+  "key_points": [
+   "Use revenue multiples such as EV/Revenue",
+   "DCF with a longer projection period until cash flows turn positive",
+   "Operating metrics such as users, GMV or ARR",
+   "Recent funding rounds or precedent deals, with caution about assumptions"
+  ],
+  "model_answer": "EBITDA multiples don't work, so use EV/Revenue or sector metrics like EV/ARR or per-user values. A DCF can still work if you project far enough out for the business to reach steady-state profitability. Recent funding rounds and precedent deals help, but stress-test the assumptions."
+ },
+ {
+  "id": "DCF1",
+  "topic": "DCF",
+  "difficulty": "Easy",
+  "question": "Walk me through a DCF.",
+  "key_points": [
+   "Project unlevered free cash flow for 5-10 years (EBIT x (1 - tax) + D&A - capex - change in working capital)",
+   "Calculate a terminal value using perpetuity growth or an exit multiple",
+   "Discount cash flows and terminal value to today at WACC",
+   "The sum is enterprise value; subtract net debt to get equity value and per-share value"
+  ],
+  "model_answer": "Project unlevered free cash flow for five to ten years. Estimate a terminal value with either a perpetuity growth rate or an exit multiple. Discount everything back at WACC and add it up to get enterprise value, then move from EV to equity value by subtracting net debt, and divide by diluted shares."
+ },
+ {
+  "id": "DCF2",
+  "topic": "DCF",
+  "difficulty": "Easy",
+  "question": "How do you calculate WACC?",
+  "key_points": [
+   "Weighted average of cost of equity and after-tax cost of debt (and preferred if any)",
+   "Weights based on market values or target capital structure",
+   "Cost of equity from CAPM: risk-free rate + beta x equity risk premium",
+   "Cost of debt is multiplied by (1 - tax rate) because interest is tax-deductible"
+  ],
+  "model_answer": "WACC = cost of equity x E/(D+E) + cost of debt x (1 - tax) x D/(D+E), adding preferred if relevant, using market-value or target weights. Cost of equity comes from CAPM: risk-free rate plus beta times the equity risk premium. Debt is taken after tax because interest is deductible."
+ },
+ {
+  "id": "DCF3",
+  "topic": "DCF",
+  "difficulty": "Medium",
+  "question": "Perpetuity growth vs exit multiple for terminal value: how do they work and when would you use each?",
+  "key_points": [
+   "Perpetuity growth: TV = final FCF x (1 + g) / (WACC - g)",
+   "Growth rate should be modest, around long-term GDP or inflation",
+   "Exit multiple: apply a comps-based multiple such as EV/EBITDA to final-year EBITDA",
+   "Use both and cross-check the implied multiple and implied growth rate"
+  ],
+  "model_answer": "Perpetuity growth assumes cash flows grow forever at a low rate: TV = FCF x (1+g)/(WACC - g), with g near long-run GDP or inflation. The exit multiple method applies a market multiple like EV/EBITDA to the final year. Bankers often favour exit multiples; good practice is to run both and sanity-check each against the other's implied figure."
+ },
+ {
+  "id": "DCF4",
+  "topic": "DCF",
+  "difficulty": "Medium",
+  "question": "Why do we use unlevered free cash flow and WACC to get to enterprise value?",
+  "key_points": [
+   "Unlevered FCF is before interest, so it's available to all capital providers",
+   "WACC reflects the required return of all capital providers, so it matches",
+   "The result is enterprise value",
+   "Levered FCF discounted at cost of equity gives equity value instead"
+  ],
+  "model_answer": "Unlevered FCF is calculated before interest payments, so it belongs to both debt and equity holders. WACC is the blended return those same investors require, so discounting one by the other gives enterprise value. If you used levered FCF, you'd discount at the cost of equity and get equity value."
+ },
+ {
+  "id": "DCF5",
+  "topic": "DCF",
+  "difficulty": "Hard",
+  "question": "What happens to a DCF valuation if the company's beta increases? Walk me through the chain.",
+  "key_points": [
+   "Higher beta raises the cost of equity through CAPM",
+   "Higher cost of equity raises WACC",
+   "Higher discount rate lowers the present value of cash flows",
+   "Terminal value falls the most, especially with perpetuity growth, so EV falls"
+  ],
+  "model_answer": "Beta feeds CAPM, so a higher beta increases the cost of equity, which lifts WACC. A higher discount rate reduces the present value of every cash flow, and terminal value is hit hardest, especially under perpetuity growth where WACC - g sits in the denominator. Enterprise value falls."
+ },
+ {
+  "id": "DCF6",
+  "topic": "DCF",
+  "difficulty": "Hard",
+  "question": "Terminal value makes up 80% of your DCF's enterprise value. Is that a problem, and what would you do?",
+  "key_points": [
+   "It's common (often 60-80%) but means the valuation leans heavily on long-term assumptions",
+   "Run sensitivity tables on WACC, growth rate or exit multiple",
+   "Extend the projection period if the business hasn't reached steady state",
+   "Cross-check implied multiple/growth and triangulate with comps and precedents"
+  ],
+  "model_answer": "It's normal for terminal value to dominate, but it means small changes in long-term assumptions swing the answer. Show sensitivity tables, consider a longer projection period if the company is still growing fast, check that the implied multiple or growth rate is sensible, and triangulate with other methods."
+ },
+ {
+  "id": "MA1",
+  "topic": "M&A",
+  "difficulty": "Easy",
+  "question": "Why would one company acquire another?",
+  "key_points": [
+   "Growth: new revenue, markets or customers",
+   "Synergies, cost or revenue",
+   "Acquire technology, talent or intellectual property",
+   "Strategic reasons: gain market share, remove a competitor, vertical integration or an undervalued target"
+  ],
+  "model_answer": "Companies buy to grow faster than they could organically, to capture cost or revenue synergies, to acquire technology, talent or IP, or for strategic reasons like gaining share, removing a competitor, integrating vertically or buying an undervalued asset."
+ },
+ {
+  "id": "MA2",
+  "topic": "M&A",
+  "difficulty": "Easy",
+  "question": "What are synergies, and which type is more reliable?",
+  "key_points": [
+   "Revenue synergies: cross-selling, pricing power, new markets",
+   "Cost synergies: cutting overlapping headcount, facilities, procurement savings",
+   "Cost synergies are more reliable and easier to achieve",
+   "Revenue synergies are uncertain and often discounted by buyers"
+  ],
+  "model_answer": "Synergies are the extra value from combining two companies. Revenue synergies come from cross-selling or pricing; cost synergies from removing duplicate costs. Cost synergies are more within management's control and more reliable, so acquirers and investors usually discount revenue synergies."
+ },
+ {
+  "id": "MA3",
+  "topic": "M&A",
+  "difficulty": "Medium",
+  "question": "Walk me through an accretion/dilution analysis.",
+  "key_points": [
+   "Start with projected net income of acquirer and target",
+   "Adjust for deal effects: forgone interest on cash, new interest on debt, new shares issued",
+   "Include synergies and new D&A from asset write-ups",
+   "Pro forma EPS = combined net income / pro forma shares, compared with acquirer's standalone EPS"
+  ],
+  "model_answer": "Project both companies' net income, then adjust for how the deal is funded: interest lost on cash used, interest on new debt, and new shares issued. Add synergies and subtract extra D&A from write-ups. Divide combined net income by pro forma shares and compare with the acquirer's standalone EPS: higher means accretive, lower means dilutive."
+ },
+ {
+  "id": "MA4",
+  "topic": "M&A",
+  "difficulty": "Medium",
+  "question": "In an all-stock deal, the acquirer trades at 20x P/E and pays 10x P/E for the target. Accretive or dilutive?",
+  "key_points": [
+   "Accretive",
+   "Acquirer's cost of stock is its earnings yield, 1/20 = 5%",
+   "Target's earnings yield at the purchase price is 1/10 = 10%",
+   "Rule: buying at a lower P/E than your own with stock is accretive, before synergies and other adjustments"
+  ],
+  "model_answer": "Accretive. Issuing stock costs the acquirer its earnings yield, 1/20 = 5%, while it's buying earnings at a 10% yield (1/10). Buying earnings more cheaply than your own shares cost makes EPS go up, before considering synergies or extra D&A."
+ },
+ {
+  "id": "MA5",
+  "topic": "M&A",
+  "difficulty": "Hard",
+  "question": "An acquirer pays all cash. Its after-tax cost of cash is 3%, and the target's earnings yield at the purchase price is 8%. Accretive? What's the general rule?",
+  "key_points": [
+   "Accretive, since 3% cost is below 8% yield",
+   "Compare the weighted after-tax cost of acquisition to the target's earnings yield",
+   "Costs: cash = forgone after-tax interest, debt = after-tax interest rate, stock = acquirer's earnings yield",
+   "Caveats: synergies, write-up D&A and transaction fees can change the result"
+  ],
+  "model_answer": "Accretive: the deal costs 3% after tax but buys an 8% earnings yield. The general rule compares the weighted after-tax cost of each funding source (forgone interest on cash, after-tax interest on debt, the acquirer's earnings yield for stock) against the target's earnings yield. Synergies, new D&A and fees can shift the answer."
+ },
+ {
+  "id": "MA6",
+  "topic": "M&A",
+  "difficulty": "Hard",
+  "question": "What is goodwill and how is it created in an acquisition?",
+  "key_points": [
+   "Purchase price above the fair value of identifiable net assets",
+   "Calculated after writing up identifiable assets such as intangibles and PP&E",
+   "Not amortised under US GAAP or IFRS",
+   "Tested for impairment at least annually; impairment is a non-cash hit to the income statement"
+  ],
+  "model_answer": "Goodwill is the excess of the purchase price over the fair value of the target's identifiable net assets, after write-ups to intangibles and PP&E. It isn't amortised under US GAAP or IFRS; instead it's tested for impairment, and any impairment is a non-cash charge on the income statement."
+ },
+ {
+  "id": "LBO1",
+  "topic": "LBO",
+  "difficulty": "Easy",
+  "question": "Walk me through a basic LBO.",
+  "key_points": [
+   "A private equity firm buys a company using a large amount of debt plus equity",
+   "Set purchase price (entry multiple) and sources and uses of funds",
+   "Project cash flows and use free cash flow to pay down debt over 3-7 years",
+   "Exit at a multiple and calculate IRR and money multiple on the equity"
+  ],
+  "model_answer": "A PE firm buys a company funded mostly with debt and partly with its own equity. You set the purchase price and sources and uses, project cash flows, and use free cash flow to repay debt over a few years. At exit you sell at an assumed multiple, subtract remaining debt, and calculate IRR and MoM on the equity invested."
+ },
+ {
+  "id": "LBO2",
+  "topic": "LBO",
+  "difficulty": "Easy",
+  "question": "Why use leverage in an LBO?",
+  "key_points": [
+   "Less equity is needed, which magnifies returns",
+   "Interest is tax-deductible (tax shield)",
+   "Debt paydown builds equity value over time",
+   "Trade-off: higher leverage increases default risk"
+  ],
+  "model_answer": "Debt lets the sponsor put in less equity, so any gain is spread over a smaller base and returns are amplified. Interest is tax-deductible, and paying down debt with the company's cash flow transfers value to the equity. The cost is higher risk of default."
+ },
+ {
+  "id": "LBO3",
+  "topic": "LBO",
+  "difficulty": "Medium",
+  "question": "What makes a good LBO candidate?",
+  "key_points": [
+   "Stable, predictable cash flows to service debt",
+   "Strong market position or competitive moat",
+   "Low capital expenditure needs",
+   "Room to improve operations or cut costs, solid management, and a clear exit path"
+  ],
+  "model_answer": "Stable, predictable cash flow comes first, since it services the debt. Add a defensible market position, low capex requirements, opportunities for operational improvement, a strong management team and a realistic exit route. A reasonable entry price helps too."
+ },
+ {
+  "id": "LBO4",
+  "topic": "LBO",
+  "difficulty": "Medium",
+  "question": "What are the main drivers of returns in an LBO?",
+  "key_points": [
+   "EBITDA growth from revenue growth or margin expansion",
+   "Multiple expansion: exiting at a higher multiple than entry",
+   "Debt paydown (deleveraging) increases equity value",
+   "Lower entry price or dividend recapitalisations can also lift returns"
+  ],
+  "model_answer": "Returns come from growing EBITDA (revenue and margins), selling at a higher multiple than you paid, and paying down debt so more of the exit value belongs to equity. Buying cheaply and dividend recaps also help."
+ },
+ {
+  "id": "LBO5",
+  "topic": "LBO",
+  "difficulty": "Hard",
+  "question": "A PE firm buys a company for $500M with 60% debt and sells it after 5 years for $700M, with $100M of debt remaining. What are the money multiple and rough IRR?",
+  "key_points": [
+   "Equity invested = 40% x $500M = $200M",
+   "Equity at exit = $700M - $100M = $600M",
+   "Money multiple = 600 / 200 = 3.0x",
+   "IRR is roughly 25% (3x over 5 years)"
+  ],
+  "model_answer": "Equity in is $200M (40% of $500M). At exit, equity is $700M minus $100M of debt = $600M. That's 3.0x, and 3x over five years is roughly a 25% IRR."
+ },
+ {
+  "id": "LBO6",
+  "topic": "LBO",
+  "difficulty": "Hard",
+  "question": "How would you estimate IRR quickly without Excel?",
+  "key_points": [
+   "Know rules of thumb: 2x in 3 years is about 26%, 2x in 5 years is about 15%",
+   "3x in 5 years is about 25%",
+   "Rule of 72: years to double = 72 / rate",
+   "Formula: IRR = MoM^(1/years) - 1"
+  ],
+  "model_answer": "Memorise anchors: 2x in 3 years is about 26%, 2x in 5 years about 15%, 3x in 5 years about 25%. The Rule of 72 gives doubling time, and the exact approach is MoM^(1/n) - 1."
+ },
+ {
+  "id": "FIT1",
+  "topic": "Fit & Behavioural",
+  "difficulty": "Easy",
+  "question": "Walk me through your resume.",
+  "key_points": [
+   "Concise, about 1-2 minutes",
+   "Tells a logical story connecting each step",
+   "Highlights relevant skills and experiences",
+   "Ends with why investment banking and why now"
+  ],
+  "model_answer": "Keep it to about two minutes and tell a story: where you started, why you made each move, what you learned that's relevant to banking, and how it all leads to this role now."
+ },
+ {
+  "id": "FIT2",
+  "topic": "Fit & Behavioural",
+  "difficulty": "Easy",
+  "question": "Why investment banking?",
+  "key_points": [
+   "Specific, genuine interest in deals and transactions",
+   "Steep learning curve and exposure to senior decision-makers",
+   "Evidence: relevant experience or research done",
+   "Links to long-term goals; doesn't lead with money"
+  ],
+  "model_answer": "Show specific interest in transactions, backed by experience or research, mention the learning curve and exposure, and connect it to where you want to go. Never lead with compensation."
+ },
+ {
+  "id": "FIT3",
+  "topic": "Fit & Behavioural",
+  "difficulty": "Medium",
+  "question": "Tell me about a time you worked under a tight deadline.",
+  "key_points": [
+   "Uses a clear structure such as STAR (situation, task, action, result)",
+   "Specific situation with real stakes",
+   "Focuses on actions you personally took",
+   "Measurable result plus what you learned"
+  ],
+  "model_answer": "Use STAR: set the scene briefly, explain your task, spend most time on the specific actions you took, and finish with a concrete result and a lesson."
+ },
+ {
+  "id": "FIT4",
+  "topic": "Fit & Behavioural",
+  "difficulty": "Medium",
+  "question": "Tell me about a deal you've followed recently.",
+  "key_points": [
+   "Names a specific deal: parties, size and timing",
+   "Explains the strategic rationale",
+   "Mentions valuation (multiple or premium) or financing structure",
+   "Gives a view on whether it was a good deal and the risks"
+  ],
+  "model_answer": "Pick one deal you know well. State who bought whom, for how much, and why. Mention the valuation or how it was financed, then give your own view on whether it makes sense and what could go wrong."
+ },
+ {
+  "id": "FIT5",
+  "topic": "Fit & Behavioural",
+  "difficulty": "Hard",
+  "question": "Tell me about a mistake you made and what you learned.",
+  "key_points": [
+   "A real mistake that you own, not a disguised strength",
+   "Not trivial and not catastrophic",
+   "What you did to fix it",
+   "Concrete lesson and how you've applied it since"
+  ],
+  "model_answer": "Choose a genuine but recoverable mistake, own it without excuses, explain how you fixed it, and show the lesson changed how you work."
+ },
+ {
+  "id": "FIT6",
+  "topic": "Fit & Behavioural",
+  "difficulty": "Hard",
+  "question": "Pitch me a stock.",
+  "key_points": [
+   "Clear recommendation (buy or sell) on a named company",
+   "Two or three specific thesis points",
+   "Valuation view, e.g. multiple versus peers or upside to a target price",
+   "Catalysts and key risks"
+  ],
+  "model_answer": "Lead with the call and company, give two or three crisp reasons, support it with valuation versus peers or a target price, name the catalysts, and acknowledge the main risks."
+ }
+]
